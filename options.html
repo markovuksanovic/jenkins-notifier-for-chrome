@@ -13,13 +13,13 @@
       </div>
       <div class='content'>
         <form onsubmit="javascript:window.close();">
-          <fieldset>
+          <fieldset style="border: none;">
             <div class="clearfix">
               <div class="left">
                 <label>Jenkins URL </label>
               </div>
               <div class="right">
-                <input name="jenkins-url" id="jenkins-url" class="text" placeholder="http://localhost:8080/jenkins" autofocus="true" />
+                <input name="jenkins-url" id="jenkins-url" class="textbox wide" placeholder="http://localhost:8080/jenkins" autofocus="true" />
               </div>
             </div>
             <div class="clearfix">
@@ -27,7 +27,7 @@
                 <label>Job name</label>
               </div>
               <div class="right">
-                <input name="job-name" id="job-name" class="text" placeholder="jobname" />
+                <input name="job-name" id="job-name" class="textbox wide" placeholder="jobname" />
               </div>
             </div>
             <div class="clearfix">
@@ -35,13 +35,13 @@
                 <label>Websocket</label>
               </div>
               <div class="right">
-                <input name="use-websocket" id="use-websocket" type="checkbox" /> Use<br />
-                <input name="websocket-url" id="websocket-url" class="text" placeholder="ws://localhost:8081/jenkins" /><br />
+                <input name="use-websocket" class="textbox" id="use-websocket" type="checkbox" /> Use<br />
+                <input name="websocket-url" id="websocket-url" class="textbox wide" placeholder="ws://localhost:8081/jenkins" /><br />
                 To use websocket, you need to install <a href="https://wiki.jenkins-ci.org/display/JENKINS/Websocket+Plugin">Jenkins Websocket Plugin</p>
               </div>
             </div>
           </fieldset>
-          <div class="buttons">
+          <div class="container button" style="float: right;">
             <input value="Save" class="button save" type="submit" />
           </div>
         </form>
